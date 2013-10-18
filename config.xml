@@ -11,5 +11,5 @@
     <author href="https://build.phonegap.com" email="info@web12.ru">
         Harutyun Harutyunyan 
     </author>
+    <gap:platform name="ios" />
 </widget>
-<gap:platform name="ios" />
