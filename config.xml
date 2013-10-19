@@ -12,5 +12,5 @@
         Harutyun Harutyunyan 
     </author>
     <gap:platform name="ios" />
-    <preference name="orientation" value="landscape" />
+    <preference name="orientation" value="portrait" />
 </widget>
