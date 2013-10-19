@@ -12,6 +12,13 @@
 <!-- =Web App Data -->
 <script>
 // document.addEventListener('touchstart', function(e){ e.preventDefault(); }, false);
+
+function bbb() {
+    alert('bbb');
+}
+function aaa() {
+    navigator.notification.alert('aaa', 'bbb', 'title', 'buttonName')
+}
 </script>
 
 <script src="phonegap.js"></script>
@@ -60,6 +67,7 @@ header h1 {
 <h1>Hello</h1>
 </header>
 
+<button onclick="aaa()">Test</button>
 <div id="page">
 
 
