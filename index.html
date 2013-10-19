@@ -22,7 +22,10 @@ function bbb() {
     alert('bbb');
 }
 
-$.mobile.touchoverflowenabled = true;
+$(document).bind("mobileinit", function() {
+        $.mobile.touchoverflowenabled = true;    
+});
+
 </script>
 <!--
 <script src="phonegap.js"></script>
