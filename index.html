@@ -59,6 +59,9 @@ h1 { display: inline-block; }
 <body onLoad="initFastButtons();"  id="fastclick">
 
 <div data-role="page" id="upload">
+<div data-role="panel" id="mpanel" data-display="overlay">
+    <!-- panel content goes here -->
+</div><!-- /panel -->
 <div data-role="header" id="header" data-position="fixed" data-theme="a"> 
 	<h1>File Pi</h1>
 </div> 
@@ -91,7 +94,7 @@ h1 { display: inline-block; }
 	<div data-role="navbar">
 		<ul>
 			<li><a href="#upload" class="ui-btn-active ui-state-persist">Upload</a></li>
-			<li><a href="#history">History</a></li>
+			<li><a href="#mpanel">History</a></li>
 			<li><a href="#about">About</a></li>
 		</ul>
 	</div>
