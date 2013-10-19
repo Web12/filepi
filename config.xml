@@ -12,5 +12,6 @@
         Harutyun Harutyunyan 
     </author>
     <gap:platform name="ios" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
     <preference name="orientation" value="portrait" />
 </widget>
