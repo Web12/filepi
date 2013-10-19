@@ -15,10 +15,12 @@
 
 function bbb() {
     alert('bbb');
-}
+}/*
 function aaa() {
     navigator.notification.alert('aaa', 'bbb', 'title', 'buttonName')
-}
+}*/
+
+
 </script>
 
 <script src="phonegap.js"></script>
@@ -28,6 +30,8 @@ function aaa() {
                 document.getElementById('header').addEventListener('touchmove', function(e) {
                     e.preventDefault();
                 }, false);
+
+$.getScript('phonegap.js', function() { alert('Load was performed.'); })
             }, false);
         </script>
 
