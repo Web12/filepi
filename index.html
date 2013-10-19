@@ -17,6 +17,7 @@ $( document ).bind( 'mobileinit', function(){
   $.mobile.loader.prototype.options.textVisible = false;
   $.mobile.loader.prototype.options.theme = "a";
   $.mobile.loader.prototype.options.html = "";
+  $.mobile.defaultPageTransition = "none";
 });	
 
 </script>
@@ -68,14 +69,33 @@ h1 { display: inline-block; }
 	<h1>File Pi</h1>
 </div> 
 <div data-role="content">	
-		<p>Upload</p>		
+		<h2 align="center">Upload</h2>	
+		
+<form action="form.php" method="post">
+<div data-role="fieldcontain">
+    <label for="name">Select file:</label>
+    <input type="file" name="name" id="name" value=""  />
+</div>	
+<div data-role="fieldcontain">
+    <label for="name">File Description (optional):</label>
+    <input type="text" name="name" id="name" value=""  />
+</div>		
+<div data-role="fieldcontain">
+<label for="flip-2">Password for download (optional):</label>
+	<select name="flip-2" id="flip-2" data-role="slider">
+		<option value="nope">No</option>
+		<option value="yep">Yes</option>
+	</select> 
+</div>
+
+</form> 		
 </div>
 <div id="footer" data-role="footer" data-position="fixed" data-theme="a"> 
 	<div data-role="navbar">
 		<ul>
 			<li><a href="#upload" class="ui-btn-active ui-state-persist">Upload</a></li>
 			<li><a href="#history">History</a></li>
-			<li><a href="#about" data-transition="slide">About</a></li>
+			<li><a href="#about">About</a></li>
 		</ul>
 	</div>
 </div> 
@@ -86,12 +106,12 @@ h1 { display: inline-block; }
 	<h1>File Pi</h1>
 </div> 
 <div data-role="content">	
-		<h2>About</h2>		
+		<h2 align="center">About</h2>		
 </div>
 <div id="footer" data-role="footer" data-position="fixed" data-theme="a"> 
 	<div data-role="navbar">
 		<ul>
-			<li><a href="#upload" data-transition="none">Upload</a></li>
+			<li><a href="#upload">Upload</a></li>
 			<li><a href="#history">History</a></li>
 			<li><a href="#about" class="ui-btn-active ui-state-persist">About</a></li>
 		</ul>
